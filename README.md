@@ -8,17 +8,8 @@ Este projeto consiste em uma solução em nuvem para **gerenciamento de aluguéi
 ## **1. Arquitetura da Solução**  
 
 ### **Diagrama da Arquitetura**  
-```mermaid
-graph TD
-    A[Front-end (Web/Mobile)] -->|HTTP Requests| B[API Gateway]
-    B --> C[BFF (Backend for Frontend)]
-    C --> D[Azure Function: RentProcess]
-    C --> E[Azure Function: Payment]
-    D --> F[Azure SQL Database]
-    E --> G[Azure Service Bus]
-    G --> H[Processamento Assíncrono]
-    H --> I[Notificações via Azure Logic Apps]
-```  
+![Captura de tela de 2025-06-09 18-29-54](https://github.com/user-attachments/assets/296fb91e-73e6-49c1-b8e9-8599e3e6f264)
+
 
 ### **Componentes Principais**  
 | **Componente**               | **Descrição**                                                                 |
